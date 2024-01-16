@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_patterens.FactoryPattern
+namespace Design_patterns.Creational.Builder
 {
-    internal class FactoryMethodInterface
+    public class Garage
     {
     }
 }

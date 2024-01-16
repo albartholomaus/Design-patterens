@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_patterens.Singleton
+namespace Design_patterns.Creational.Singleton
 {
     /*
  Goal: ensure that aclass only has one instance. 

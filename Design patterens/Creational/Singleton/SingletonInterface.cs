@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_patterens.Singleton
+namespace Design_patterns.Creational.Singleton
 {
     public class SingletonInterface
     {
@@ -16,16 +16,18 @@ namespace Design_patterens.Singleton
             var test = new Logger();
             */
 
-            var instance1= Logger.Instance;
-            var instance2= Logger.Instance;
+            /* so you have to do this */
+            var instance1 = Logger.Instance;
+            var instance2 = Logger.Instance;
+
             if (instance1 == instance2 && instance2 == Logger.Instance)
             {
                 Console.WriteLine("Instances are the same");
             }
 
-            instance1.Log($"Meaage from {nameof(instance1)}");
-            instance1.Log($"Meaage from {nameof(instance2)}");
-            Logger.Instance.Log($"Meaage from {nameof(Logger.Instance)}");
+            instance1.Log($"Message from {nameof(instance1)}");
+            instance1.Log($"Message from {nameof(instance2)}");
+            Logger.Instance.Log($"Message from {nameof(Logger.Instance)}");
 
             Console.ReadLine();
         }
