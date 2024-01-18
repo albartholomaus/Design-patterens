@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Design_patterns.Creational.Prototype
 {
+    /*prototype*/
     public abstract class Person
     {
         public abstract string Name { get; set; }
-        public abstract Person Clone { get; set; }  
+        public abstract Person Clone(bool deepCoone);
 
     }
 }
