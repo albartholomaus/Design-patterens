@@ -4,6 +4,7 @@ using Design_patterns;
 using Design_patterns.Creational.Singleton;
 using Design_patterns.Creational.FactoryPattern;
 using Design_patterns.Creational.Builder;
+using Design_patterns.Creational.Prototype;
 
 
 //SingletonInterface singletonInterface = new SingletonInterface();
@@ -15,5 +16,8 @@ using Design_patterns.Creational.Builder;
 //InterfaceForAbstractFactoryPattern interfaceForAbstractFactoryPattern = new InterfaceForAbstractFactoryPattern();
 //interfaceForAbstractFactoryPattern.InterfaceForAbstractFactoryPatternMethod();
 
-BuilderInterface builderInterface = new BuilderInterface();
-builderInterface.BuilderInterfaceMethod();
+//BuilderInterface builderInterface = new BuilderInterface();
+//builderInterface.BuilderInterfaceMethod();
+
+PrototypeInterface prototypeInterface = new PrototypeInterface();
+prototypeInterface.PrototypeInterfaceMethod();
