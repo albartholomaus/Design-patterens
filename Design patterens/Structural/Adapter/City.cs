@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Design_patterns.Structural.Adapter
 {
-    /*HELPPER CLASS */
+    /*helper class
+     different then city from external systems  
+     */
     public class City
     {
         public string Fullname { get; set; }

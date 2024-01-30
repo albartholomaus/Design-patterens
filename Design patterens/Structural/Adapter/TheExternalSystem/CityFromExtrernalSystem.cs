@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_patterns.Structural.Adapter
+namespace Design_patterns.Structural.Adapter.TheExternalSystem
 {
+    /*helper class*/
     public class CityFromExternalSystem
     {
         public string Name { get; set; }

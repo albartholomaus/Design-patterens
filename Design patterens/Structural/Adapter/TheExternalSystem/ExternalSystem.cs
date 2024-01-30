@@ -5,13 +5,12 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_patterns.Structural.Adapter
+namespace Design_patterns.Structural.Adapter.TheExternalSystem
 {
-    /* Adaptee */
+    /* Adaptee*/
 
     public class ExternalSystem
     {
-
         public CityFromExternalSystem GetCity()
         {
             return new CityFromExternalSystem("Sioux City", "Little Chicago", 50000);

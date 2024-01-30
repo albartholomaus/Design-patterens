@@ -5,6 +5,9 @@ using Design_patterns.Creational.Singleton;
 using Design_patterns.Creational.FactoryPattern;
 using Design_patterns.Creational.Builder;
 using Design_patterns.Creational.Prototype;
+using Design_patterns.Structural.Adapter.Wrapper;
+using Design_patterns.Structural.Adapter;
+using Design_patterns.Structural.Bridge;
 
 
 //SingletonInterface singletonInterface = new SingletonInterface();
@@ -19,5 +22,12 @@ using Design_patterns.Creational.Prototype;
 //BuilderInterface builderInterface = new BuilderInterface();
 //builderInterface.BuilderInterfaceMethod();
 
-PrototypeInterface prototypeInterface = new PrototypeInterface();
-prototypeInterface.PrototypeInterfaceMethod();
+//PrototypeInterface prototypeInterface = new PrototypeInterface();
+//prototypeInterface.PrototypeInterfaceMethod();
+
+//ClientInterface clientInterface = new();
+//clientInterface.ClientInterfaceMethod();
+
+Design_patterns.Structural.Bridge.ClientInterface client=new();
+client.ClientCode();
+
