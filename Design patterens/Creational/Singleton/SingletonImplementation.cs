@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 namespace Design_patterns.Creational.Singleton
 {
     /*
- Goal: ensure that aclass only has one instance. 
+ Goal: ensure that a class only has one instance. 
        Provide a global point of access to the Class. 
  pattern type: Creational. 
- idea: make the class responsivle for ensureing only one instence of itself exists. 
+ idea: make the class responsible for ensuring only one instance of itself exists. 
 
     when to use: 
-    when there is needs to ony be one instance of a class. bust be accessable to a client from a well know access point
-    sole instance should be extensivle by subclassing, should extend instance without moding code
+    when there is needs to ony be one instance of a class. bust be accessible to a client from a well know access point
+    sole instance should be extensible by subclassing, should extend instance without modding code
     
     Examples of when to use: 
-    managing a database connecion pool
+    managing a database connection pool
     Caching frequently 
-    managing applicatuon cibfguration settings 
+    managing application configuration settings 
     resource management 
 
 

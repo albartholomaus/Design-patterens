@@ -12,6 +12,13 @@ namespace Design_patterns.Structural.Decorator
     {
         public void DecoratorClient()
         {
+            /* Intent 
+                attach additional responsibilities to a object dynamically 
+                provides a flexible alternative to subclassing for extending functionality 
+
+                We don't what to add responsibility to a class but add it to an "instance" of a class at runtime:  aka object 
+                 Also know a as a wrapper
+             */
             var cloudMailService = new CloudMailService();
             cloudMailService.SendMail("Hi there");
 
@@ -22,9 +29,15 @@ namespace Design_patterns.Structural.Decorator
             var statsDecorator = new StatisticsDecorator(cloudMailService);
             statsDecorator.SendMail($"hi there via {nameof(statsDecorator)} wrapper");
 
-            //add more behivior 
-            var messageDataBase = new MessageDatabaseDecorator(Onprem);
+            //add more behavior 
+            var messageDataBaseDecorator = new MessageDatabaseDecorator(Onprem);
+            messageDataBaseDecorator.SendMail($"hi there via {nameof(messageDataBaseDecorator)} wrapper 1.");
+            messageDataBaseDecorator.SendMail($"hi there via {nameof(messageDataBaseDecorator)} wrapper 2.");
 
+            foreach (var message in messageDataBaseDecorator.SendMessages)
+            {
+                Console.WriteLine($"Stored message: \"{message}\"");
+            }
         }
 
     }

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Design_patterns.Structural.Decorator.Decorator
 {
+    /*concrete decorator */
     public class StatisticsDecorator: MailServiceDecoratorBase
     {
-        public StatisticsDecorator(IMailService mailService):base(mailService)
-        {
-            
-        }
+        public StatisticsDecorator(IMailService mailService):base(mailService) // use the base constructor we can store the instance here in the
+                                                                               // readonly field in the mail service decorator abstract class 
+        {}
 
         public override bool SendMail(string message)
         {

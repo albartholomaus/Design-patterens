@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Design_patterns.Structural.Decorator.Component
 {
-    /*Componant (as interface)
+    /*Component (as interface)
      could be an abstract class
      */
     public interface IMailService

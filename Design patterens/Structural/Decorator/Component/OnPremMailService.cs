@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Design_patterns.Structural.Decorator.Component
 {
+    //concrete component 2
     public class OnPremMailService: IMailService
     {
         public bool SendMail(string message)

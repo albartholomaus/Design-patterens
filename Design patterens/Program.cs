@@ -8,6 +8,8 @@ using Design_patterns.Creational.Prototype;
 using Design_patterns.Structural.Adapter.Wrapper;
 using Design_patterns.Structural.Adapter;
 using Design_patterns.Structural.Bridge;
+//using Design_patterns.Structural.Decorator;
+using Design_patterns.Structural.Composite;
 
 
 //SingletonInterface singletonInterface = new SingletonInterface();
@@ -28,6 +30,12 @@ using Design_patterns.Structural.Bridge;
 //ClientInterface clientInterface = new();
 //clientInterface.ClientInterfaceMethod();
 
-Design_patterns.Structural.Bridge.ClientInterface client=new();
-client.ClientCode();
+//Design_patterns.Structural.Bridge.ClientInterface client=new();
+//client.ClientCode();
+
+//DecoratorClientCode decoratorClient =new();
+//decoratorClient.DecoratorClient();
+
+CompositeClientCode compositeClientCode=new CompositeClientCode();
+compositeClientCode.CompositeClientCodeMethod();
 
